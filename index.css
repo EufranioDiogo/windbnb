@@ -39,6 +39,7 @@
         padding: 0 1rem;
         font-size: Poppins;
         transition: 0.2s;
+        cursor: pointer;
     }
     .search-engine-conteiner button:hover {
         background-color: #3333330e;
@@ -48,6 +49,7 @@
         font-weight: bold;
         font-style: normal;
         font-size: 1.4rem;
+        
     }
     .btn-places {
         display: flex;
@@ -99,7 +101,7 @@
         cursor: pointer;
     }
     .room:hover {
-        margin: 1.0rem;
+        transform: translateY(-20px) rotate(1deg);
     }
     .room .room-img {
         width: 100%;
@@ -242,6 +244,13 @@
         font-size: 1.4rem;
         color: #333;
         font-family: Poppins, sans-serif;
+        cursor: pointer;
+    }
+    .guest-field *{
+        cursor: pointer;
+    }
+    .guest-field:hover{
+        background-color: #1a1a1a12;
     }
     .search-button{
         text-transform: capitalize;
@@ -401,14 +410,12 @@
     }
     .guests-fields{
         width: 90%;
-        display: none;
         margin: 0 auto;
     }
     .cities-country-results{
         width: 90%;
         margin: 0 auto;
         padding: 0;
-        display: none;
     }
     #close-btn{
         margin-right: 1rem;

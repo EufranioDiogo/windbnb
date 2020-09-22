@@ -1,13 +1,13 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center"><a href="https://eufraniodiogo.github.io/Windbnb">Windbnb</a></h1>
+<h1 align="center"><a href="https://eufraniodiogo.github.io/windbnb">Windbnb</a></h1>
 <div align="center">
   <h3>
-    <a href="https://eufraniodiogo.github.io/Windbnb">
+    <a href="https://eufraniodiogo.github.io/windbnb">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/EufranioDiogo/Windbnb">
+    <a href="https://github.com/EufranioDiogo/windbnb">
       Solution
     </a>
   </h3>
@@ -24,14 +24,17 @@
 
 ## Overview
 
-![screenshot1](imgs)
+![screenshot1](IMG/Screenshot1.png)
+![screenshot2](IMG/Screenshot2.png)
+![screenshot3](IMG/Screenshot3.png)
+![screenshot4](IMG/Screenshot4.png)
 
 - Where can I see your demo?<br>
-  [Here](https://eufraniodiogo.github.io/Windbnb)
+  [Here](https://eufraniodiogo.github.io/windbnb)
 - What was your experience?<br>
   It was a very cool project to pratice and learn new stuff!
 - What have you learned/improved?<br>
-  I learned more about working with apis and asynchronous functions in JavaScript.
+  More about Design.
 
 
 ### Built With
