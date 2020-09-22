@@ -1,0 +1,425 @@
+@media only screen and (max-width: 1750px) {
+    .header-conteiner {
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto;
+    }
+    .header-conteiner .logo-conteiner {
+        display: flex;
+        justify-content: space-between;
+        height: 85%;
+        position: relative;
+    }
+    .logo-conteiner img {
+        height: 100%;
+        width: auto;
+    }
+    .logo-conteiner {
+        color: #EB5757;
+        margin-left: 1rem;
+    }
+    .header-conteiner .search-engine-conteiner {
+        height: 85%;
+        position: relative;
+        padding: 1rem;
+        display: flex;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.1);
+    }
+    .search-engine-conteiner button {
+        border: none;
+        height: 100%;
+        color: #333;
+        margin-right: 1px solid #F2F2F2;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        padding: 0 1rem;
+        font-size: Poppins;
+        transition: 0.2s;
+    }
+    .search-engine-conteiner button:hover {
+        background-color: #3333330e;
+    }
+    .search-engine-conteiner button i {
+        color: #EB5757;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.4rem;
+    }
+    .btn-places {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-places i {
+        margin-left: 1rem;
+    }
+    .rooms-main-conteiner {
+        width: 90%;
+        margin: 4rem auto;
+        border-radius: 0.5rem;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .rooms-main-conteiner .info-header {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-family: Poppins, sans-serif;
+        padding: 0 1.5rem;
+    }
+    .rooms-main-conteiner .info-header .location {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .rooms-conteiner .info-header .more-rooms {
+        font-size: 1rem;
+        color: rgb(58, 58, 58);
+    }
+    .rooms-conteiner {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 2rem;
+    }
+    .room {
+        position: relative;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1.5rem;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .room:hover {
+        margin: 1.0rem;
+    }
+    .room .room-img {
+        width: 100%;
+        height: 30rem;
+        border-radius: 0.5rem;
+        display: block;
+        position: relative;
+        object-fit: cover;
+    }
+    .room .room-description {
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        transition: 0.5s;
+    }
+    .room-description .top-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 0.5rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        font-family: Mulish, sans-serif;
+        transition: 0.5s;
+    }
+    .super-host{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #EB5757;
+        color: #fff;
+    }
+    .top-info .left-side-information{
+        display: flex;
+        align-items: center;
+    }
+    .top-info .left-side-information i {
+        margin-right: 0.5rem;
+    }
+    .top-info .right-side-information {
+        display: flex;
+        align-items: center;
+    }
+    .top-info .right-side-information i {
+        margin-right: 0.5rem;
+        color: #eb5757e7;
+    }
+    
+    .room-description .bottom-info {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.6rem;
+        color: #333;
+        font-family: Mulish, sans-serif;
+        border-radius: 0 0 0.5rem 0.5rem;
+        margin-top: 0.5rem;
+        transition: 0.5s;
+    }
+    .filter{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background-color: #1a1a1a7f;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        display: none;
+    }
+    .search-panel{
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        background-color: #fff;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .logo-conteiner-search-panel{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-conteiner-search-panel img{
+        display: block;
+        margin-left: 8rem;
+    }
+    .logo-conteiner-search-panel i{
+        font-size: 2.5rem;
+        color: #1a1a1a92;
+        transition: 0.5s;
+        display: inline-block;
+        margin-right: 8rem;
+        cursor: pointer;
+    }
+    .logo-conteiner-search-panel i:hover {
+        color: #1a1a1a;
+    }
+    .search-panel-conteiner{
+        position: relative;
+        width: 100%;
+        padding: 0 8rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex: auto;
+        align-items: flex-end;
+    }
+    .search-panel-div{
+        width: 30%;
+    }
+    .location-field{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .label{
+        width: 100%;
+        display: block;
+        font-size: 1.4rem;
+        color: #333;
+        font-family: Poppins, sans-serif;
+        margin: 1rem 0;
+    }
+    .input-field {
+        border: none;
+        padding: 1rem 2rem;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 -0.0rem 0.5rem rgba(0, 0, 0, 0.118);
+    }
+    .guest-label-number{
+        margin-bottom: 1.2rem;
+        display: block;
+    }
+    .guest-field{
+        display: block;
+        font-size: 1.4rem;
+        color: #333;
+        font-family: Poppins, sans-serif;
+    }
+    .search-button{
+        text-transform: capitalize;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        background-color: #eb5757d6;
+        transition: 0.5s;
+        font-weight: 700;
+        height: 4rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+    .search-button:hover{
+        background-color: #eb5757;
+    }
+    .search-result-options{
+        width: 100%;
+        position: relative;
+        padding: 0 8rem;
+        height: 55%;
+        margin-top: 2%;
+        display: flex;
+        overflow: hidden;
+    }
+    .cities-country-results{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        list-style-type: none;
+        margin-right: 15%;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .cities-country-results li{
+        padding: 1.5rem 0;
+        font-size: 1.4rem;
+        font-family: Poppins, sans-serif;
+        color: #333;
+        margin: 0.5rem 0;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 0.5rem;
+    }
+    .cities-country-results li i{
+        margin: 0 0.5rem;
+    }
+    .cities-country-results li:hover{
+        background-color: #1a1a1a12;
+    }
+    .guests-fields{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .guests-fields .guest-counter{
+        padding: 1rem;
+        display: flex;
+        font-size: 1.4rem;
+        font-family: Poppins, sans-serif;
+        flex-wrap: wrap;
+    }
+    .guests-fields .guest-counter h2{
+        font-size: 1.4rem;
+        display: block;
+        width: 100%;
+    }
+    .guests-fields .guest-counter p{
+        display: block;
+        width: 100%;
+        color: #333;
+    }
+    .guests-fields .guest-counter .counter{
+        display: flex;
+        margin-top: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .counter button{
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1.4rem;
+        border-radius: 0.5rem;
+        transition: 0.5s;
+        background-color: #fff;
+        border: 1px solid #828282;
+        cursor: pointer;
+    }
+    .counter button:hover{
+        background-color: #e2e2e2;
+    }
+    .counter p{
+        margin: 0 1rem;
+    }
+    footer{
+        width: 100%;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    footer h3{
+        font-family: Poppins, sans-serif;
+        color: #1a1a1a;
+        font-size: 2rem;
+        padding: 1rem;
+        text-decoration: overline;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .rooms-conteiner{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .logo-conteiner img{
+        height: 35%;
+    }
+    .header-conteiner{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .header-conteiner .search-engine-conteiner{
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: center;
+        flex: auto;
+        flex-wrap: wrap;
+    }
+    .search-result-options{
+        height: 40%;
+        padding: 0;
+        width: 85%;
+        margin: 1.5rem auto;
+    }
+    .search-panel-conteiner{
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .search-panel-conteiner div{
+        width: 80%;
+    }
+    .search-panel{
+        height: 90vh !important;
+    }
+    .guest-field{
+        border-radius: 0.5rem;
+        box-shadow: 0.0rem 0.1rem 0.5rem #1a1a1a2e;
+        padding: 0 1rem;
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+    .guest-field * {
+        cursor: pointer;
+    }
+    .guests-fields{
+        width: 90%;
+        display: none;
+        margin: 0 auto;
+    }
+    .cities-country-results{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        display: none;
+    }
+    #close-btn{
+        margin-right: 1rem;
+        margin-top: -4rem;
+    }
+    .logo-conteiner-search-panel img{
+        margin-left: 10%;
+    }
+    
+    .search-button{
+        margin-top: 0.5rem;
+        width: 30%;
+    }
+}

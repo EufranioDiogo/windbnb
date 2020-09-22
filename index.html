@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="CSS/universal.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Windbnb</title>
+</head>
+
+<body>
+  <div class="site-conteiner">
+    <div class="filter">
+      <div class="search-panel">
+        <div class="search-conteiner-input">
+
+          <div class="logo-conteiner-search-panel">
+            <img src="IMG/logo.png" alt="windbnb logo">
+            <i id="close-btn" class="fas fa-times"></i>
+          </div>
+
+          <div class="search-panel-conteiner">
+            <div class="location-field search-panel-div">
+              <label class="label" for="location">Location</label>
+              <input type="text" class="input-field" placeholder="City, Country" v-model="searchingPlace"
+                @input.trim="searchPlaces">
+            </div>
+
+            <div class="guest-field search-panel-div">
+              <label class="label" for="guests">Guest Number</label>
+              <label type="text" class="guest-label-number">{{totalGuests}}
+                {{ totalGuests <= 1 ? 'Guest' : 'Guests'}}</label>
+            </div>
+
+            <button class="search-button" @click="search">
+              <i class="fas fa-search"></i>
+              search
+            </button>
+          </div>
+        </div>
+
+        <div class="search-result-options">
+          <ul class="cities-country-results">
+            <li v-for="location in possiblesLocations" @click="setLocationToSearch(location)"><i
+                class="fas fa-map-marker-alt"></i>{{ location.city + ', ' + location.country }}</li>
+          </ul>
+
+          <div class="guests-fields">
+            <div class="guest-counter">
+              <h2>Adults</h2>
+              <p>Ages 13 or above</p>
+              <div class="counter">
+                <button class="decrease-btn" @click="decreaseAdultGuests">
+                  -
+                </button>
+                <p class="amount-guest">
+                  {{ adultGuests }}
+                </p>
+                <button class="encrease-btn" @click="encreaseAdultGuests">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="guest-counter">
+              <h2>Children</h2>
+              <p>Ages 2 - 12</p>
+              <div class="counter">
+                <button class="decrease-btn" @click="decreaseChildGuests">
+                  -
+                </button>
+                <p class="amount-guest">
+                  {{ childGuests }}
+                </p>
+                <button class="encrease-btn" @click="encreaseChildGuests">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="header-conteiner">
+      <div class="logo-conteiner">
+        <img src="IMG/logo.png" alt="windbnb logo">
+      </div>
+      <div class="search-engine-conteiner">
+        <button class="btn-places" onclick="openSearchHeader()">
+          {{ actualLocation }}
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <button class="btn-add-guest" onclick="openSearchHeader()">
+          Add guests
+        </button>
+        <button class="search-btn" onclick="openSearchHeader()">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <div class="rooms-main-conteiner">
+      <div class="info-header">
+        <h1 class="location">Stays in {{ actualCity }}, {{ actualCountry }}</h1>
+        <h2>{{ shownResults.length }} Places</h2>
+      </div>
+
+      <div class="rooms-conteiner">
+        <a class="room" v-for="place in shownResults">
+          <img :src="place.photo" :alt="place.title" class="room-img">
+          <div class="room-description">
+            <div class="top-info">
+              <div class="left-side-information">
+                <i v-if="place.type == 'Entire house'" class="fas fa-home"></i>
+                <i v-else-if="place.type == 'Entire apartment'" class="fas fa-building"></i>
+                {{ place.type }}
+              </div>
+              <div class="super-host" v-if="place.superHost">
+                <p >SuperHost</p>
+              </div>
+
+              <div class="right-side-information">
+                <i class="fas fa-star"></i>
+                <p>{{ place.rating }}</p>
+              </div>
+            </div>
+            <div class="bottom-info">
+              <p>{{ place.title }}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h3>Eufránio Diogo @ Devchallenges</h3>
+  </footer>
+  <script src="JS/index.js"></script>
+</body>
+
+</html>
