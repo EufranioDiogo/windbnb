@@ -33,17 +33,11 @@ function getPlaces(locationToSearch, guestNumber = 0) {
     app.shownResults = []
 
     if (guestNumber == 0) {
-        for (let i = 0; i < app.places.length; i++) {
-            if (locationToSearch.city == app.places[i].city && locationToSearch.country == app.places[i].country) {
-                app.shownResults.push(app.places[i])
-            }
-        }
+        app.places.forEach(element => {
+            app.shownResults = app.places.filter(element => locationToSearch.city == element.city && locationToSearch.country == element.country);
+        })
     } else {
-        for (let i = 0; i < app.places.length; i++) {
-            if (locationToSearch.city == app.places[i].city && locationToSearch.country == app.places[i].country && locationToSearch.maxGuests == app.places[i].maxGuests) {
-                app.shownResults.push(app.places[i])
-            }
-        }
+        app.shownResults = app.places.filter(element => locationToSearch.city == element.city && locationToSearch.country == element.country && locationToSearch.maxGuests == element.maxGuests);
     }
 }
 
@@ -54,7 +48,7 @@ let app = new Vue({
         actualCountry: 'Finland',
         places: [],
         searchingResuls: [],
-        searchingPlace: '',
+        searchingPlaceInputBox: '',
         possiblesLocations: [],
         childGuests: 0,
         adultGuests: 0,
@@ -80,14 +74,19 @@ let app = new Vue({
         },
         setLocationToSearch(location) {
             this.locationToSearch = location;
-            this.searchingPlace = location.city + ', ' + location.country;;
+            this.searchingPlaceInputBox = location.city + ', ' + location.country;
             document.querySelector('.input-field').value = location.city + ', ' + location.country;
         },
         searchPlaces() {
-            if (this.searchingPlace) {
-                let aux = []
+            if (this.searchingPlaceInputBox) {
+                let aux = [];
                 let flag = false;
-                let re = new RegExp(this.searchingPlace, 'ig')
+                let re = new RegExp(this.searchingPlaceInputBox, 'ig');
+
+                /*this.possiblesLocations this.places.filter(element => re.test(element.city + element.country))*/
+
+
+                
                 for (let i = 0; i < this.places.length; i++) {
                     if (re.test(this.places[i].city + this.places[i].country)) {
                         for (let j = 0; j < aux.length; j++) {
