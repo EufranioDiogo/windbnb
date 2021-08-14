@@ -1,53 +1,38 @@
-<!-- Please update value in the {}  -->
-
-<h1 align="center"><a href="https://eufraniodiogo.github.io/windbnb">Windbnb</a></h1>
-<div align="center">
-  <h3>
-    <a href="https://eufraniodiogo.github.io/windbnb">
-      Demo
-    </a>
-    <span> | </span>
-    <a href="https://github.com/EufranioDiogo/windbnb">
-      Solution
-    </a>
-  </h3>
-</div>
-
-<p></p>
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-  - [Built With](#built-with)
-- [Contact](#contact)
-
-## Overview
-
-![screenshot1](IMG/Screenshot1.png)
-![screenshot2](IMG/Screenshot2.png)
-![screenshot3](IMG/Screenshot3.png)
-![screenshot4](IMG/Screenshot4.png)
-
-- Where can I see your demo?<br>
-  [Here](https://eufraniodiogo.github.io/windbnb)
-- What was your experience?<br>
-  It was a very cool project to pratice and learn new stuff!
-- What have you learned/improved?<br>
-  More about Design.
+# Windbnd
 
 
-### Built With
+[English Translation](#english)
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+[Imagens / Images](#images)
 
-- Vue.js
-- JS
-- HTML
-- CSS
+## Sobre
 
-## Contact
+- **Nome Projecto**: Windbnd
+- **Data / Período de Criação**: Período de ínicio de pandemia.
+- **Motivo**: Necessidade de Melhorar minhas habilidades quanto front-end developer.
+- **Objectivo**: Construir um fork minimalista do famoso site airbnb, mas focado para filândia.
+- **Tecnologias Usadas**: `HTML`, `CSS`, `JS`, `VUE.js`, `Fake API`
+- **Link de Acesso**: [click here](https://eufraniodiogo.github.io/windbnb/)
+- **Autor / Autores**: Eufránio Diogo
 
-- [Website](https://eufraniodiogo.github.io)
-- [GitHub](https://github.com/EufranioDiogo)
-- Email: eufraniodiogo5@gmail.com
+
+
+<h2 id="english">About</h2>
+
+- **Project Name**: Windbnd
+- **Date / Creation Time**: The start of pandemic.
+- **Why**: Necessity to push up my skills as front-end developer.
+- **Goals**: Get better my front-end skills.
+- **Used Tecs**: `HTML`, `CSS`, `JS`, `VUE.js`, `Fake API`
+- **Access Link**: [click here](https://eufraniodiogo.github.io/windbnb/)
+- **Author(s)**: Eufránio Diogo
+
+<h2 id="images">Imagens / Images</h2>
+
+![result page image](IMG/../IMAGES/Screenshot%202021-08-14%20at%2001-35-07%20Windbnb.png)
+![result page image](IMG/../IMAGES/Screenshot%202021-08-14%20at%2001-35-52%20Windbnb.png)
+![result page image](IMG/../IMAGES/Screenshot%202021-08-14%20at%2001-36-26%20Place.png)
+## Source of Ideia / Origem da Ideia?
+[DevChallenges.io](https://devchallenges.io)
+
+// esmalte
