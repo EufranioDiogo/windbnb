@@ -113,7 +113,7 @@
       </div>
 
       <div class="rooms-conteiner">
-        <a class="room" v-for="place in shownResults">
+        <a class="room" v-for="place in shownResults" :href="'HTML/place.html?id=' + place.id" >
           <img :src="place.photo" :alt="place.title" class="room-img">
           <div class="room-description">
             <div class="top-info">

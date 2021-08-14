@@ -1,0 +1,107 @@
+html {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+#main-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.color--red {
+    color: #EB5757;
+}
+
+.main-container__go-back-button {
+    padding: 0.25rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: #c72828ec;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    width: 10%;
+}
+.main-container__go-back-button:hover {
+    background-color: #EB5757;
+}
+.main-container--house-title {
+    font-size: 2.6rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.main-container--house-title::after {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 0.5rem;
+    background-color: #EB5757;
+    border-radius: 2rem;
+    bottom: -2.5%;
+    left: 0;
+}
+.main-container__room-container-and-description {
+    display: flex;
+    margin: 5rem 0;
+
+}
+.room-img {
+    width: 60%;
+    height: 47rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 0 #EB5757;
+    object-fit: cover;
+}
+.room-description-list {
+    margin: 0 0 0 3.5rem;
+}
+.room-description-list__list-item {
+    list-style-type: none;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+.list-item__icon {
+    width: 4.8rem;
+    margin-right: 1rem;
+}
+.list-item__description {
+    margin-right: 1rem;
+}
+
+.room-details {
+    margin-bottom: 5rem;
+}
+.room-details__description {
+    font-size: 1.4rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #000000af;
+}
+
+@media only screen and (max-width: 765px) {
+    .main-container__room-container-and-description {
+        flex-direction: column;
+    }
+    .room-img {
+        width:100%;
+        height:auto;
+    }
+    .room-description-list {
+        margin: 0;
+        margin-top: 4rem;
+    }
+    .main-container__go-back-button {
+        width: auto;
+    }
+}

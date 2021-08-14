@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../CSS/universal.css">
+    <link rel="stylesheet" href="../CSS/place.css">
+    <title>Place</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <a href="../index.html" class="main-container__go-back-button color--red bold">home</a>
+        <h1 class="main-container--house-title bold">
+            {{ place.title == null ? "Info Not Avaible" : place.title }}
+        </h1>
+
+        <div class="main-container__room-container-and-description">
+            <img :src="place.photo" alt="Room image" :title="place.title" class="room-img">
+
+            <ul class="room-description-list">
+                <li class="room-description-list__list-item">
+                    <img src="../ICONS/icon-park-outline_city.svg" alt="" class="list-item__icon">
+                    <h3 class="list-item__description color--red bold">City:</h3>
+                    <span class="list-item__value">{{ place.city == null ? "Info Not Avaible" : place.city }}</span>
+                </li>
+
+                <li class="room-description-list__list-item">
+                    <img src="../ICONS/gis_search-country.svg" alt="" class="list-item__icon">
+                    <h3 class="list-item__description color--red bold">Country:</h3>
+                    <span class="list-item__value">{{ place.country == null ? "Info Not Avaible" : place.country }}</span>
+                </li>
+
+                <li class="room-description-list__list-item">
+                    <img src="../ICONS/akar-icons_people-group.svg" alt="" class="list-item__icon">
+                    <h3 class="list-item__description color--red bold">Max Guests:</h3>
+                    <span class="list-item__value">{{ place.maxGuests == null ? "Info Not Avaible" : place.maxGuests }}</span>
+                </li>
+
+                <li class="room-description-list__list-item">
+                    <img src="../ICONS/ant-design_star-filled.svg" alt="" class="list-item__icon">
+                    <h3 class="list-item__description color--red bold">Rating:</h3>
+                    <span class="list-item__value">{{ place.rating == null ? "Info Not Avaible" : place.rating }}</span>
+                </li>
+
+                <li class="room-description-list__list-item">
+                    <img src="../ICONS/mdi_bed-outline.svg" alt="" class="list-item__icon">
+                    <h3 class="list-item__description color--red bold">Beds:</h3>
+                    <span class="list-item__value">{{ place.beds == null ? "Info Not Avaible" : place.beds }}</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="room-details">
+            <span class="room-details__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis architecto voluptas impedit
+                eveniet sint ducimus praesentium nesciunt tempore, pariatur aperiam vitae iste ut minima? Corrupti
+                facere consequatur delectus nisi eaque at distinctio quibusdam saepe molestiae, similique beatae enim
+                modi corporis necessitatibus dolor quasi alias optio hic eius rerum. Est at consequuntur rem, quaerat
+                asperiores suscipit maxime ad veritatis, quas sapiente expedita quos temporibus totam debitis ducimus
+                perferendis voluptatem, illum perspiciatis iure! Qui suscipit adipisci eum iste perspiciatis aliquam
+                dicta provident mollitia sint alias ea, architecto, vel consectetur numquam necessitatibus officiis quae
+                consequatur nulla? Nulla, commodi. Architecto pariatur ut libero?
+            </span>
+        </div>
+    </div>
+    <script src="../JS/place.js"></script>
+</body>
+
+</html>
