@@ -34,5 +34,3 @@
 ![result page image](IMG/../IMAGES/Screenshot%202021-08-14%20at%2001-36-26%20Place.png)
 ## Source of Ideia / Origem da Ideia?
 [DevChallenges.io](https://devchallenges.io)
-
-// esmalte
